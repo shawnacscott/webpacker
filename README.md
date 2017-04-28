@@ -12,7 +12,7 @@ even need the asset pipeline. This is mostly relevant when exclusively using com
 JavaScript frameworks.
 
 It's designed to work with Rails 5.1+ and makes use of the [Yarn](https://yarnpkg.com) dependency management
-that's been made default from that version forward.
+that's been made default from that version forward. Please note that it is not designed to be used with the `rails new --api` option.
 
 ## Prerequisites
 
@@ -205,7 +205,7 @@ This is enabled by the `rails-erb-loader` loader rule in `config/webpack/shared.
 
 To use Webpacker with React, just create a new app with `rails new myapp --webpack=react` (or run `rails webpacker:install:react` on a Rails app already setup with webpacker), and all the relevant dependencies
 will be added via yarn and changes to the configuration files made. Now you can create JSX files and
-have them properly compiled automatically.
+have them properly compiled automatically. 
 
 ## Ready for Angular with TypeScript
 
